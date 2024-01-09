@@ -7,7 +7,6 @@
 
 ```java
  
-"""
 Feature: sign up
 
 Scenario - seccessful sign up
@@ -23,7 +22,7 @@ Given
 When 
 Then
 And
-"""
+
 ```
 
 ### Cucumber have 4 components 
