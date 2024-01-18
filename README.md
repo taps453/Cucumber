@@ -36,6 +36,16 @@ And
 - It have all keywords.(feature, Given, When, Then,As, *)
 - It contain scenario related to that feature.
 
+  ```java
+
+  Feature: It describes the current test script which has to be executed.
+  Scenario: It is steps and expected outcome for a specific test case.
+  Scenario outline: Scenario can be executed for multiple sets of data using scenario outline.
+  Given: It specifies the context of the text to be executed.
+  When: specifies the test action which has to perform.
+  Then: Expected outcome of the test can be represented by “Then”
+```
+
 ### Step file
 - This file contain test step Code (Selenium + Java + Annotations    (cucu..annotations)).
  
