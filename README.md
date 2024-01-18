@@ -35,8 +35,8 @@ And
 - It should have ".feature" extension.
 - It have all keywords.(feature, Given, When, Then,As, *)
 - It contain scenario related to that feature.
-
-  ```java
+- 
+ ```bash
 
   Feature: It describes the current test script which has to be executed.
   Scenario: It is steps and expected outcome for a specific test case.
