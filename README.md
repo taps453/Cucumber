@@ -25,7 +25,7 @@ And
 
 ```
 
-### Cucumber have 4 components 
+### Cucumber have 3 components 
 - Feature file
 - Step Definition file
 - Test runner
@@ -50,8 +50,8 @@ And
 - create Maven Project
 - Add Dependencies (Lastest Junit , Cucumber Dependencies , Eclipse Natural Plugin)
 
+<hr>
 
-------------------------------------------------------------------------
 ### Report in cucumber 
 
 - format = {"pretty", html:test-output}
@@ -69,3 +69,88 @@ And
 - Format : report format
 - Strict : will fail Execution if there are pending steps.
 
+  <hr>
+
+
+### Cucumber Data Driven Framework
+##### we can Implement BDD cucumber by 3 ways
+- Simple data approach - No Use Examples Keyword
+- Scenario Outline 
+- Data Table 
+
+#### Simple Data Approach
+
+```java
+
+Feature: Login Application
+
+Scenario outline: User Loogin Scenario
+	Given User is on Application Home apge
+	When Application page title is Free CRM
+	Then User enters "abc@gmail" and "ABC@007"
+	And User click Login button
+	When User nevigate to user profile page
+```
+
+#### Scenario Outline 
+
+```java
+
+Feature: Login Application
+
+Scenario outline: User Loogin Scenario
+	Given User is on Application Home apge
+	When Application page title is Free CRM
+	Then user enters"<username>" and "<password">
+	And User click Login button
+	When User nevigate to user profile page
+
+Examples:
+	| username | password |
+	| abc@gmail.com | ABC@007 |
+```
+
+#### Data Table
+
+
+<hr>
+
+### Tag in Cucumber - same as grouping in TestNG
+
+```java
+
+Feature: Login user in app
+
+@SmokeTest @RegressionTest
+Scenario: Login with valid Credentials
+	  Given user is on Application Homepage
+
+@FunctionalTest @SanityTest
+Scenario: Create new user
+	  given user is able to create new user
+
+@Regression @FunctionalTest
+Scenario: Delete newly created user
+	  Given user is able to delete the user
+```
+
+
+#### For running Specfic group of test cases - 
+- In TestRunner file uder the Tags name mention the group name
+-- //  tags = {"@SmokeTest , @RegressionTest"} - OR Condition
+-- //  tags = {"@SmokeTest" , "@RegressionTest"} - AND Condition
+
+
+<hr>
+
+### Hooks in Cucumber - same as annotataions in TestNG
+
+```java
+
+// @Before
+   public void OpenBrowser(){
+}
+// @After
+   public void closeBrowser(){
+}
+```
