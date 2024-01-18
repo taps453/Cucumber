@@ -1,6 +1,6 @@
 #### 1- Cucumber Advantages
 
-#### 2- Before keyword in Cucumber -
+#### 2- Background keyword in Cucumber -
 - In the Cucumber tool, the Background keyword is used to group multiple given statements into a single group. The keyword is mostly used when the same set of given statements are repeated in each scenario of the feature file.
 
 #### 3- What is BDD
