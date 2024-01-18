@@ -44,6 +44,7 @@ And
   Given: It specifies the context of the text to be executed.
   When: specifies the test action which has to perform.
   Then: Expected outcome of the test can be represented by “Then”
+  
 ```
 
 ### Step file
