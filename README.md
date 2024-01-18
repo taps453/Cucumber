@@ -137,8 +137,8 @@ Scenario: Delete newly created user
 
 #### For running Specfic group of test cases - 
 - In TestRunner file uder the Tags name mention the group name
--- //  tags = {"@SmokeTest , @RegressionTest"} - OR Condition
--- //  tags = {"@SmokeTest" , "@RegressionTest"} - AND Condition
+- //  tags = {"@SmokeTest , @RegressionTest"} - OR Condition
+- //  tags = {"@SmokeTest" , "@RegressionTest"} - AND Condition
 
 
 <hr>
